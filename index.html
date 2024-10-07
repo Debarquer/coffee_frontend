@@ -4,21 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Coffee</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Our Coffee Selection</h2>
-            <p>Discover our wide range of coffee products.</p>
-        </section>
+    <main role="main">
+        <div class="container">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Coffee Party</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About us</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </header>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card rounded mb-4 shadow-sm">
+                        <img class="card-img-top" src="webroot/images/coffee_people.jpg" alt="Coffee">
+                        <h2 class="card-title myCardText">Who are we?</h2>
+                        <p class="card-text myCardText">
+                            We are a group of coffee enthusiasts who want to share our love of coffee with the world.
+                            Join us for our weekly coffee tasting events and discover new flavors and brewing techniques. Whether you're a seasoned coffee connoisseur or just starting your coffee journey, there's something for everyone.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card rounded mb-4 shadow-sm">
+                        <img class="card-img-top" src="webroot/images/coffee_pour.jpg" alt="Coffee">
+                        <h2 class="card-title myCardText">What do we do?</h2>
+                        <p class="card-text myCardText">
+                            We host coffee parties where you can learn about different types of coffee and how to make them.
+                            We also offer workshops on brewing techniques and coffee bean selection. Our experts will guide you through the process of making the perfect cup of coffee.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card rounded mb-4 shadow-sm">
+                        <img class="card-img-top" src="webroot/images/coffee_hands.jpg" alt="Coffee">
+                        <h2 class="card-title myCardText">Why choose us?</h2>
+                        <p class="card-text myCardText">
+                            We are passionate about coffee and want to share our knowledge with you.
+                            Our events are designed to be fun and informative, providing you with the skills and knowledge to appreciate coffee on a deeper level. Join us and become part of a community that celebrates the art and science of coffee.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">                   
+                    <div class="card rounded mb-4 shadow-sm">
+                        <img class="card-img-top" src="webroot/images/coffee_putting.jpg" alt="Coffee">
+                        <h2 class="card-title myCardText">Coffee Party: How it works</h2>
+                        <p class="card-text myCardText">
+                            <ol>
+                                <li>Sign up for a coffee party</li>
+                                <li>Attend the coffee party</li>
+                                <li>Learn about different types of coffee</li>
+                                <li>Enjoy a cup of coffee</li>
+                            </ol>
+                            <p class="myCardText">Don't forget to bring your friends and family to share the experience!</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <footer>
+                <p>&copy; 2024 Coffee. All rights reserved.</p>
+            </footer>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2024 Coffee. All rights reserved.</p>
-    </footer>
+
     <script src="scripts.js"></script>
 </body>
 </html>
